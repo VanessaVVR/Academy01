@@ -1,0 +1,16 @@
+<script runat="server" language="Javascript">
+  Platform.Load("core", "1.1.1");
+  var api = new Script.Util.WSProxy(),
+      columns = ["CustomerKey", "Name", "isSendable"],
+      filter = {
+        Property: "CustomerKey",
+        SimpleOperator: "IsNotNull",
+        Value: ""
+      },
+      opts = {
+        BatchSize: 15
+      };
+  var req = api.retrieve("DataExtension", columns, filter, opts, {});
+  Write("varsion 1\n" + Stringify(req));
+   
+</script>
