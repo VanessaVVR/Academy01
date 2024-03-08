@@ -3,7 +3,9 @@
   Platform.Load("core", "1.1.1");
 
   var api = new Script.Util.WSProxy();
+
   Variable.SetValue("ContentJson", "False");
+  
   var post = Platform.Function.ParseJSON(Platform.Request.GetPostData('utf-8'));
 
   if(post != null) {
@@ -146,17 +148,13 @@
             throw "Wrong origin";
         }
 		
-		/// DO SOMETHING
-		
     } catch(error) {
     
         Write(Stringify({ status: "Error", message: error }));
     
     } 	
 
-
   </script>
-
 </body>
 </html>
 %%[ENDIF]%%
