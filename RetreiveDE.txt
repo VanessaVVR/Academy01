@@ -11,6 +11,6 @@
         BatchSize: 15
       };
   var req = api.retrieve("DataExtension", columns, filter, opts, {});
-  Write("varsion 1\n" + Stringify(req));
+  Write("varsion 2\n" + Stringify(req));
    
 </script>
