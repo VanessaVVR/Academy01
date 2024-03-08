@@ -1,6 +1,6 @@
 <script runat="server">
 
-  Platform.Load("core", "1");
+  Platform.Load("core", "1.1.1");
 
   var api = new Script.Util.WSProxy();
 
