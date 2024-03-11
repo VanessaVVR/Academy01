@@ -150,8 +150,8 @@
 		
     } catch(error) {
     
-        Write(Stringify({ status: "Error", message: error }));
-    
+        Write(Stringify({ status: "Error", message: error })); 
+        
     } 	
 
   </script>
